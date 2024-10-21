@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../Font/Vazir.ttf");
+}
+a {
+  text-decoration: none !important;
+}
+body {
+  font-family: "vazir";
+  direction: rtl;
+  padding-top: 60px;
+}
+button {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.text-orange {
+  color: #ff6331;
+}
+.text-orange:hover {
+  color: #ff6331;
+}
+#navbar {
+  height: 60px;
+  background-color: #f8f8f8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1234;
+}
+#dropnav {
+  width: 30px;
+  height: 20px;
+}
+#dropnav span {
+  width: 30px;
+  border: 2px solid #00000075;
+  position: absolute;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+#dropnav span:nth-child(1) {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#dropnav span:nth-child(2) {
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+#dropnav span:nth-child(3) {
+  top: 20px;
+  left: 0;
+  right: 0;
+}
+#dropnav.transform-bars span:nth-child(1) {
+  top: 10px;
+  transform: rotate(140deg);
+}
+#dropnav.transform-bars span:nth-child(2) {
+  opacity: 0;
+}
+
+#dropnav.transform-bars span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-140deg);
+}
+.nav-link {
+  color: #000;
+  font-size: 0.9375rem;
+}
+.nav-link:hover {
+  color: orangered;
+}
+.btn-orange {
+  height: 44px;
+  padding: 0 2.365rem;
+  background-color: #ff5722 !important;
+  color: #ffffffff;
+  border-radius: 0.5rem !important;
+  transition: all 0.1s ease-in-out;
+}
+.btn-orange:hover {
+  color: #ffffff;
+  background-color: #ff6431d8;
+}
+#header {
+  background-image: url("../Images/banner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 7rem;
+}
+.content-container {
+  width: 100%;
+  max-width: 528px;
+  background-color: #1e294091;
+  border-radius: 1rem;
+  margin-top: -1rem;
+}
+.content-container .btn {
+  height: 3.2rem;
+  border-radius: 0.6rem;
+}
+.content-container .btn:hover {
+  background: transparent;
+  color: #ffffff;
+}
+.banner-phone {
+  width: 100%;
+  max-width: 350px;
+  height: 400px;
+  background-image: url("../Images/mockup-phone.webp");
+  left: 0;
+  top: 40%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button:focus img {
+  opacity: 1;
+}
+button {
+  white-space: nowrap;
+}
+.size-icon {
+  width: 95px;
+  height: 49px;
+  opacity: 0.2;
+  transition: all 0.2s ease-in-out;
+}
+.size-icon:hover {
+  opacity: 1;
+}
+.section-parallax {
+  background-image: url("../Images/parallax.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.parallax-item {
+  position: relative;
+}
+.parallax-item::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+}
+.parallax-item:hover::after {
+  height: 100%;
+}
+.parallax-item:hover > .parallax-item__description {
+  display: block !important;
+}
+.parallax-item__title {
+  font-size: 1.25rem;
+}
+.parallax-item:hover > p {
+  display: block !important;
+}
+.weblog-post .card:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 2px 9px 24px -16px rgb(134, 129, 129);
+  -moz-box-shadow: inset 2px 9px 24px -16px rgb(134, 129, 129);
+  box-shadow: 2px 9px 24px -16px rgb(134, 129, 129);
+}
+.weblog-post .card {
+  overflow: hidden;
+}
+.weblog-post .card .card-text {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  line-height: 25px;
+  overflow: hidden;
+  text-align: justify;
+  color: #9b9b9b9b;
+}
+.weblog-post .card .card-title {
+  font-size: 1.375rem;
+}
+.weblog-post .card .card-text {
+  font-size: 1.1rem;
+}
+.section-cities {
+  background-image: url("../Images/map-back.svg");
+  background-color: #f8f8f9;
+  background-repeat: no-repeat;
+}
+#footer {
+  background-color: #000000;
+}
+#footer ul li,
+a {
+  font-size: 0.75rem;
+  transition: all 0.2s ease-in;
+}
+#footer ul li a:hover {
+  color: #ff5722 !important;
+}
+.trust-logo {
+  height: auto;
+  max-width: 120px;
+  padding: 5px 0;
+}
+.footer-social ul i {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.747);
+  transition: all 0.2s ease-in-out;
+}
+.footer-social ul i:hover{
+  color:orangered;
+}
+@media screen and (max-width: 992px) {
+  .btn-items {
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-container {
+    margin: 0;
+  }
+  .mobilenav {
+    position: fixed;
+    top: 60px;
+    background-color: #ffffff;
+    text-align: right;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0;
+  }
+  .activenav {
+    height: auto;
+    padding: 0.5rem;
+  }
+  .fcr {
+    /* fcr : flex Column Reverse */
+    flex-direction: column-reverse;
+  }
+  .scroll-x-768 {
+    overflow-x: scroll;
+  }
+}
